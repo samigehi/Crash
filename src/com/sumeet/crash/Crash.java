@@ -39,6 +39,13 @@ public final class Crash {
 	@TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 	public static void init(Context context) {
 		try {
+			if (context == null)
+				return;
+			Thread.UncaughtExceptionHandler handler = Thread.getDefaultUncaughtExceptionHandler();
+			if (handler != null) {
+				Log.e(TAG, "remove ACRA.init(); & add  CRASH.init();");
+				return;
+			}
 
 			app = (Application) context.getApplicationContext();
 
