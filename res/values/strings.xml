@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Crash</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="crash_text">An unexpected error occurred forcing the DEMO APP to stop. Please help us fix this by sending us error report data, all you have to do is to click TELL US.</string>
+    <string name="unexpected_error">An unexpected error has occured.</string>
+
+</resources>
